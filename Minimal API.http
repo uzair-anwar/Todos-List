@@ -1,0 +1,34 @@
+﻿@Minimal API_HostAddress = https://localhost:44326
+@API_HostAddress = https://localhost:44326
+
+POST {{API_HostAddress}}/todoitems
+Content-Type: application/json
+
+{
+  "name":"devsorb",
+  "isComplete":false
+}
+
+###
+
+GET {{API_HostAddress}}/todoitems
+
+###
+
+GET {{API_HostAddress}}/todoitems/2
+
+###
+
+PUT {{API_HostAddress}}/todoitems/2
+Content-Type: application/json
+
+{
+  "name": "feed fish",
+  "isComplete": false
+}
+
+###
+
+DELETE {{API_HostAddress}}/todoitems/2
+
+###
